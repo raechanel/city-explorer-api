@@ -42,14 +42,14 @@ class Forecast {
   }
 }
 
-app.get('/movies', async (request, response) => {
+app.get('/movie', async (request, response) => {
+  let loco = request.query.searchQuery;
   const movieUrl = `https://api.themoviedb.org/3/search/movie?api_key=${process.env.MOVIE_API}&query=${loco}&include_adult=false`;
-  let loco = request.query.location;
 
   const movieData = await axios.get(movieUrl);
-
+  
   try {
-    let movieResults = movieData.data.map(movieData => new Movie(movieData));
+    let movieResults = movieData.data.results.map(movieData => new Movie(movieData));
     response.send(movieResults);
   } catch (error) {
     response.send('Oop, Check for a typo. Cannot retrieve movie data!');
