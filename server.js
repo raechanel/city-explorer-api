@@ -4,8 +4,11 @@ console.log('hi guise');
 
 
 const express = require('express');
-
+const cors = require('cors');
 const app = express();
+const axios = require('axios');
+
+app.use(cors());
 
 //middleware
 require('dotenv').config();
@@ -32,13 +35,16 @@ app.get('/sayHello', (request, response) => {
 });
 
 // this route: http://localhost:3001/weather?searchQuery=seattle
-app.get('/weather', (request, response) => {
-  let searchQuery = request.query.searchQuery;
+app.get('/weather', async (request, response) => {
+  // let searchQuery = request.query.searchQuery;
 
-  let city = (weatherData.filter(cityWeather => cityWeather.city_name.toLowerCase() === searchQuery));
+  const weatherUrl = `https://api.weatherbit.io/v2.0/forecast/daily/?lat=${request.query.lat}&lon=-${request.query.lon}&key=${process.env.WEATHER_API}&days=5&lan=en&units=I`;
 
+  // let city = (weatherData.filter(cityWeather => cityWeather.city_name.toLowerCase() === searchQuery));
+  const weatherArr = await axios.get(weatherUrl);
+  
   try {
-    let anotherCity = city[0].data.map(weather => new Forecast(weather));
+    let anotherCity = weatherArr.data.data.map(weather => new Forecast(weather));
     response.send(anotherCity);
   } catch (error) {
     response.status(404).send('pick another city');
