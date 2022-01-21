@@ -42,3 +42,24 @@ Start time: 5:30
 Finish time: 1 hour 30 minutes
 
 Actual time needed to complete: 6:58
+
+Name of feature: Weather (live)
+
+Estimate of time needed to complete: 2 hour
+
+Start time: 5:30
+
+Finish time: 1 hour 30 minutes
+
+Actual time needed to complete: 6:58
+
+Name of feature: Movie API
+
+Estimate of time needed to complete: 2 hour
+
+Start time: 5:30
+
+Finish time: 1 hour 30 minutes
+
+Actual time needed to complete: 6:58
+
