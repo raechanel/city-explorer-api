@@ -19,9 +19,11 @@
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
+[image](./public/wrrc-lab2.png)
+
 ### Time Estimates
 
-Name of feature: Set up server repo
+Name of feature: Setup server repo
 
 Estimate of time needed to complete: 1 hour
 
@@ -30,3 +32,34 @@ Start time: 8:00
 Finish time: 30 minutes
 
 Actual time needed to complete: 8:30
+
+Name of feature: Weather PlaceHolder
+
+Estimate of time needed to complete: 2 hour
+
+Start time: 5:30
+
+Finish time: 1 hour 30 minutes
+
+Actual time needed to complete: 6:58
+
+Name of feature: Weather (live)
+
+Estimate of time needed to complete: 2 hour
+
+Start time: 5:30
+
+Finish time: 1 hour 30 minutes
+
+Actual time needed to complete: 6:58
+
+Name of feature: Movie API
+
+Estimate of time needed to complete: 2 hour
+
+Start time: 5:30
+
+Finish time: 1 hour 30 minutes
+
+Actual time needed to complete: 6:58
+
