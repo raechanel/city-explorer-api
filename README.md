@@ -23,7 +23,7 @@
 
 ### Time Estimates
 
-Name of feature: Set up server repo
+Name of feature: Setup server repo
 
 Estimate of time needed to complete: 1 hour
 
