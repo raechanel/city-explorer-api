@@ -1,4 +1,5 @@
 'use strict';
+
 const axios = require('axios');
 
 // this route: https://api.weatherbit.io/v2.0/forecast/daily/?lat=47&lon=-122&key=70a5381f94e84b70a207e6a1f5a6767b&days=5&lan=en&units=I

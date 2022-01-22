@@ -6,11 +6,10 @@ console.log('hi guise');
 const express = require('express');
 const cors = require('cors');
 const app = express();
-// const axios = require('axios');
-
 
 // import to use process.env.PORT
 require('dotenv').config();
+
 // local port
 const PORT = process.env.PORT || 3002;
 
